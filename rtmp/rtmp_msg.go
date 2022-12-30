@@ -1,10 +1,10 @@
 package rtmp
 
 import (
-	"../util"
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"gortmp/util"
 )
 
 // http://www.adobe.com/cn/devnet/rtmp.html
@@ -1659,9 +1659,7 @@ func (msg *FCUnpublishMessage) String() string {
 // Response Message. Server -> Response -> Client
 //
 
-//
 // Response Connect Message
-//
 type ResponseConnectMessage struct {
 	CommandMessage
 	Properties interface{} `json:",omitempty"`
@@ -1707,9 +1705,7 @@ func (msg *ResponseConnectMessage) String() string {
 	}
 }
 
-//
 // Response Call Message
-//
 type ResponseCallMessage struct {
 	CommandMessage
 	Object   interface{}
@@ -1755,9 +1751,7 @@ func (msg *ResponseCallMessage) String() string {
 	}
 }
 
-//
 // Response Create Stream Message
-//
 type ResponseCreateStreamMessage struct {
 	CommandMessage
 	Object   interface{} `json:",omitempty"`
@@ -1817,9 +1811,7 @@ func (msg *ResponseCreateStreamMessage) String() string {
 	}
 }
 
-//
 // Response Play Message
-//
 type ResponsePlayMessage struct {
 	CommandMessage
 	Object      interface{} `json:",omitempty"`
@@ -1884,9 +1876,7 @@ func (msg *ResponsePlayMessage) String() string {
 	}
 }
 
-//
 // Response Publish Message
-//
 type ResponsePublishMessage struct {
 	CommandMessage
 	Properties interface{} `json:",omitempty"`
@@ -1938,9 +1928,7 @@ func (msg *ResponsePublishMessage) String() string {
 	}
 }
 
-//
 // Response Seek Message
-//
 type ResponseSeekMessage struct {
 	CommandMessage
 	Description string
@@ -1973,9 +1961,7 @@ func (msg *ResponseSeekMessage) String() string {
 	}
 }
 
-//
 // Response Pause Message
-//
 type ResponsePauseMessage struct {
 	CommandMessage
 	Description string
@@ -2007,9 +1993,7 @@ func (msg *ResponsePauseMessage) String() string {
 	}
 }
 
-//
 // Response Message
-//
 type ResponseMessage struct {
 	CommandMessage
 	Properties  interface{} `json:",omitempty"`

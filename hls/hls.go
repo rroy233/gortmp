@@ -1,9 +1,9 @@
 package hls
 
 import (
-	"../util"
 	"errors"
 	"fmt"
+	"gortmp/util"
 	"os"
 	"strconv"
 	"strings"

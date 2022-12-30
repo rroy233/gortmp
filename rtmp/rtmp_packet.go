@@ -1,8 +1,8 @@
 package rtmp
 
 import (
-	"../avformat"
 	"fmt"
+	"gortmp/avformat"
 )
 
 // Video or Audio

@@ -5,8 +5,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-
-	"../util"
+	"gortmp/util"
 )
 
 // Action Message Format -- AMF 0

@@ -1,15 +1,14 @@
 package mpegts
 
 import (
-	"../rtmplog"
-	"../util"
 	"bytes"
 	"errors"
 	"fmt"
+	"gortmp/rtmplog"
+	"gortmp/util"
 	"io"
 	"io/ioutil"
 	"os"
-	//"sync"
 )
 
 // NALU AUD 00 00 00 01 09 F0
@@ -64,7 +63,7 @@ const (
 	// 0xFF Forbidden
 
 	STREAM_TYPE_H264 = 0x1B
-	STREAM_TYPE_AAC  = 0X0F
+	STREAM_TYPE_AAC  = 0x0F
 
 	// 1110 xxxx
 	// 110x xxxx

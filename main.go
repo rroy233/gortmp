@@ -1,12 +1,9 @@
 package main
 
 import (
-	//"./mpegts"
-	"./rtmp"
-	//"fmt"
-	//"os"
-	//"./avformat"
-	"./config"
+	"gortmp/config"
+	"gortmp/rtmp"
+	"log"
 )
 
 func main() {
@@ -17,6 +14,7 @@ func main() {
 	}
 
 	l := ":1935"
+	log.Printf("listening on :1935\n")
 	err = rtmp.ListenAndServe(l)
 	if err != nil {
 		panic(err)

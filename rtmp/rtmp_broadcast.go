@@ -1,11 +1,7 @@
 package rtmp
 
 import (
-	//"../config"
-	//"../util"
 	"fmt"
-	//"strings"
-	//"os"
 	"sync"
 	"time"
 )

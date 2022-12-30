@@ -1,9 +1,9 @@
 package mpegts
 
 import (
-	"../util"
 	"errors"
 	"fmt"
+	"gortmp/util"
 	"io"
 	"io/ioutil"
 )

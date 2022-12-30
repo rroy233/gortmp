@@ -1,10 +1,10 @@
 package mpegts
 
 import (
-	"../util"
 	"bytes"
 	"errors"
 	"fmt"
+	"gortmp/util"
 	"io"
 )
 

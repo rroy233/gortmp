@@ -1,17 +1,16 @@
 package rtmp
 
 import (
-	"../avformat"
-	"../config"
-	"../hls"
-	"../mpegts"
-	"../util"
 	"bytes"
+	"errors"
 	"fmt"
+	"gortmp/avformat"
+	"gortmp/config"
+	"gortmp/hls"
+	"gortmp/mpegts"
+	"gortmp/util"
 	"io"
 	"os"
-	//"reflect"
-	"errors"
 	"strconv"
 	"strings"
 	"sync"

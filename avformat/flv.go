@@ -1,11 +1,10 @@
 package avformat
 
 import (
-	//"../rtmplog"
-	"../util"
 	"bytes"
 	"errors"
 	"fmt"
+	"gortmp/util"
 	"io"
 	"os"
 	"time"

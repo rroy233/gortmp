@@ -1,11 +1,9 @@
 package rtmp
 
 import (
-	"../util"
 	"errors"
-	//"fmt"
+	"gortmp/util"
 	"io"
-	//"reflect"
 )
 
 const (

@@ -1,11 +1,11 @@
 package mpegts
 
 import (
-	"../avformat"
-	"../util"
 	"bytes"
 	"errors"
 	"fmt"
+	"gortmp/avformat"
+	"gortmp/util"
 	"io"
 	"io/ioutil"
 )
@@ -661,11 +661,11 @@ func PESToTs(frame *MpegtsPESFrame, packet MpegTsPESPacket) (tsPkts []byte, err 
 		bwTsHeader := &bytes.Buffer{}
 
 		tsHeader := MpegTsHeader{
-			SyncByte:                  0x47,
-			TransportErrorIndicator:   0,
-			PayloadUnitStartIndicator: 0,
-			TransportPriority:         0,
-			Pid:                       frame.Pid,
+			SyncByte:                   0x47,
+			TransportErrorIndicator:    0,
+			PayloadUnitStartIndicator:  0,
+			TransportPriority:          0,
+			Pid:                        frame.Pid,
 			TransportScramblingControl: 0,
 			AdaptionFieldControl:       1,
 			ContinuityCounter:          frame.ContinuityCounter,

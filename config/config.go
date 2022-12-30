@@ -1,8 +1,8 @@
 package config
 
 import (
-	"../util"
 	"errors"
+	"gortmp/util"
 	"os"
 	"strconv"
 	"strings"
